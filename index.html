@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafeteria Michis de pana</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(-45deg, #000, #333, #000, #333);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+            color: #fff;
+        }
+
+        @keyframes gradientBG {
+            0% {background-position: 0% 50%;}
+            50% {background-position: 100% 50%;}
+            100% {background-position: 0% 50%;}
+        }
+
+        .container {
+            text-align: center;
+            padding: 50px;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        .menu-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .menu-item {
+            background-color: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            margin: 15px;
+            padding: 20px;
+            width: 300px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .menu-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
+        }
+
+        .menu-item img {
+            border-radius: 10px;
+            width: 100%;
+            height: auto;
+        }
+
+        .menu-item h3 {
+            margin-top: 10px;
+            font-size: 1.5em;
+        }
+
+        .menu-item p {
+            margin: 10px 0;
+            font-size: 1em;
+        }
+
+        .next-button {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            color: #fff;
+            background-color: transparent;
+            border: 2px solid #fff;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .next-button:hover {
+            background-color: #fff;
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>CAFETERIA MICHIS DE PANA</h1>
+        <div class="menu-section">
+            <div class="menu-item">
+                <img src="CAFE1.jpg" alt="Capuchino michino">
+                <h3>Capuchino michino</h3>
+                <p>Acompañado por: Lucas</p>
+                <img src="MICHI2.jpg">
+            </div>
+            <div class="menu-item">
+                <img src="CAFE2.jpg" alt="Capuchino Pana">
+                <h3>Capuchino Pana</h3>
+                <p>Acompañado por: Manuel</p>
+                <img src="MICHI1.jpg" alt="Gato Manuel">
+            </div>
+            <div class="menu-item">
+                <img src="CAFE3.jpg" alt="Mauchino">
+                <h3>Mauchino</h3>
+                <p>Acompañado por: Marlon</p>
+                <img src="MICHI3.jpg" alt="Gato Marlon">
+            </div>
+            <div class="menu-item">
+                <img src="CAFE4.jpg" alt="Mauchino supremo">
+                <h3>Mauchino supremo</h3>
+                <p>Acompañado por: Paula</p>
+                <img src="MICHI4.jpg" alt="Gata Paula">
+            </div>
+        </div>
+        <a href="informacion.html" class="next-button">Ver Más</a>
+    </div>
+</body>
+</html>
